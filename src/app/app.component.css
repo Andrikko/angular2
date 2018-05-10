@@ -1,0 +1,18 @@
+:host {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1.lesson-title {
+    padding: 0 0 6px 65px;
+}
+nav a {
+    text-decoration: none;
+    transition: all 0.5s;
+    color: #E03237;
+    padding-right: 15px;
+}
+nav a.active {
+    border-radius: 3px;
+    padding: 2px 8px;
+    background-color: #E03237;
+    color:white;
+}

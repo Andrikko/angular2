@@ -1,0 +1,32 @@
+<!-- <div class="content">
+  <nav class='nav'>
+    <div class="nav-item"> <span>Todos</span> </div>
+    <div class="nav-item"> Weather</div>
+    <div class="nav-item"> Grid Items</div>
+  </nav>
+</div>
+
+<ul class='list'>
+  <li *ngFor="let item of phraseList" (click)="getInfo(item)"> {{ item.text }}</li>
+</ul>
+<div *ngIf="select">
+  Selected Language : {{select}}
+</div> -->
+
+<h1>Test router</h1>
+<nav>
+  <a routerLink="/list1" routerLinkActive='active'>List1</a>
+  <a routerLink="/list2" routerLinkActive='active'>List2</a>
+  <a routerLink='/message-box' routerLinkActive='active'>Message Box</a>
+  <a routerLink='/increment' routerLinkActive='active'>Increment</a>
+  <a routerLink='/timer' routerLinkActive='active'>Timer</a>
+  <a routerLink='/namecard' routerLinkActive='active'>Namecard</a> 
+</nav>
+
+<div>
+  <router-outlet></router-outlet>
+</div>
+<!-- <increment></increment> -->
+<!-- <host-timer></host-timer> -->
+<!-- <namecard-host></namecard-host> -->
+<!-- <message-box-host></message-box-host> -->

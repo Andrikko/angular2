@@ -1,0 +1,6 @@
+.messageBox{
+    border: 0.5px solid red;
+    padding: 10px 15px;
+    margin-top: 15px;
+    width: 30%;
+}
