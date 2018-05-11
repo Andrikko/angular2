@@ -13,10 +13,12 @@ import { nameCardComponent } from "./compProp/name-card.component";
 import { nameCardHostComponent } from "./compProp/name-card-host.component";
 import { MessageBoxComponent } from "./message-box/message-box.component";
 import { MessageBoxHost } from "./message-box/message-box-host.component";
+import { BlockHostComponent } from "./vievChild/block-host.component";
+import { BlockComponent } from "./vievChild/block.component";
 
 @NgModule({
   declarations: [
-    AppComponent,Increment,Counter,Timer,Ttimer,nameCardComponent,nameCardHostComponent,MessageBoxComponent,MessageBoxHost
+    AppComponent,Increment,Counter,Timer,Ttimer,nameCardComponent,nameCardHostComponent,MessageBoxComponent,MessageBoxHost,BlockHostComponent,BlockComponent
   ],
   imports: [
     BrowserModule,

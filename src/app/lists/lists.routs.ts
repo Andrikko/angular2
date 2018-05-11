@@ -3,6 +3,7 @@ import { MessageBoxHost } from '../message-box/message-box-host.component';
 import { Increment } from '../increment/increment.components';
 import { Timer } from '../timer/timer.component';
 import { nameCardHostComponent } from '../compProp/name-card-host.component';
+import { BlockHostComponent } from '../vievChild/block-host.component';
 
 export const routs = [
     { path: 'list1', component: List1Component},
@@ -11,5 +12,6 @@ export const routs = [
     { path: 'increment', component: Increment},
     { path: 'timer', component: Timer},
     { path: 'namecard', component: nameCardHostComponent},
+    { path: 'vievChild', component: BlockHostComponent},
     { path: '', redirectTo: 'list1', pathMatch: 'full'}
 ];
