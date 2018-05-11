@@ -15,10 +15,19 @@ import { MessageBoxComponent } from "./message-box/message-box.component";
 import { MessageBoxHost } from "./message-box/message-box-host.component";
 import { BlockHostComponent } from "./vievChild/block-host.component";
 import { BlockComponent } from "./vievChild/block.component";
+import { HomeWork } from "./homework/hw.component";
+import { TableTrComponent } from "./homework/table-tr.component";
 
 @NgModule({
   declarations: [
-    AppComponent,Increment,Counter,Timer,Ttimer,nameCardComponent,nameCardHostComponent,MessageBoxComponent,MessageBoxHost,BlockHostComponent,BlockComponent
+    AppComponent,
+    Increment,
+    Counter,
+    Timer,Ttimer,
+    nameCardComponent,nameCardHostComponent,
+    MessageBoxComponent,MessageBoxHost,
+    BlockHostComponent,BlockComponent,
+    HomeWork,TableTrComponent
   ],
   imports: [
     BrowserModule,
