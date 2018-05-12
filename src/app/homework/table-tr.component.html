@@ -3,4 +3,5 @@
     <td>Id:{{ item?.id }} </td>
     <td>Name: {{ item?.name }}</td>
     <td>Price:{{ item?.price }} </td>
+    <button (click)="delete(item.id)">Delete</button>
 </tr>

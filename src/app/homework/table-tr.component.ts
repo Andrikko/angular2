@@ -82,4 +82,7 @@ export class TableTrComponent extends HomeWork {
       this.Products[i].visible = false;
     }
   }
+  delete(value: any){
+    this.Products[value-1].visible = false;
+  }
 }
