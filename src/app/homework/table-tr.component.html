@@ -1,7 +1,5 @@
-<tr *ngFor="let item of Products">
-  <div ng-if="item.visible">
-    <td>Id:{{ item.id }} </td>
-    <td>Name: {{ item.name }}</td>
-    <td>Price:{{ item.price }} </td>
-  </div>
+<tr *ngFor="let item of Products" [hidden]="!item.visible">
+    <td>Id:{{ item?.id }} </td>
+    <td>Name: {{ item?.name }}</td>
+    <td>Price:{{ item?.price }} </td>
 </tr>

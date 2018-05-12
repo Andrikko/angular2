@@ -1,4 +1,4 @@
-import {Component} from "@angular/core";
+import {Component, Input} from "@angular/core";
 
 @Component({
   moduleId: module.id,
@@ -8,14 +8,14 @@ import {Component} from "@angular/core";
     td{
         padding: 5px;
     }
-    `],
-    inputs: ['rows']
+    `]
 })
 export class HomeWork {
+  
+  @Input()
   rows: number;
 
-  a:number = this.rows;
-//   alert(){
-//       console.log(this.rows);
-//   }
+  alert(){
+      console.log(this.rows);
+  }
 }
