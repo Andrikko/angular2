@@ -15,7 +15,5 @@ export class HomeWork {
   @Input()
   rows: number;
 
-  alert(){
-      console.log(this.rows);
-  }
+  
 }

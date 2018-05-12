@@ -1,0 +1,10 @@
+.error{
+    text-decoration: underline;
+    color: red;
+    font-weight: 500;
+}
+.nice{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+    color: blue;
+}

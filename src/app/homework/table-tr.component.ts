@@ -78,8 +78,6 @@ export class TableTrComponent extends HomeWork {
   my: number;
 
   ngOnInit() {
-    console.log(this.Products);
-    console.log(this.rows);
     for (let i = this.rows; i < this.Products.length; i++) {
       this.Products[i].visible = false;
     }

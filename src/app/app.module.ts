@@ -17,6 +17,7 @@ import { BlockHostComponent } from "./vievChild/block-host.component";
 import { BlockComponent } from "./vievChild/block.component";
 import { HomeWork } from "./homework/hw.component";
 import { TableTrComponent } from "./homework/table-tr.component";
+import { Inter } from "./interpolation/interpolation.component";
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { TableTrComponent } from "./homework/table-tr.component";
     nameCardComponent,nameCardHostComponent,
     MessageBoxComponent,MessageBoxHost,
     BlockHostComponent,BlockComponent,
-    HomeWork,TableTrComponent
+    HomeWork,TableTrComponent,
+    Inter
   ],
   imports: [
     BrowserModule,
