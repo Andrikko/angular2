@@ -27,3 +27,6 @@
 <button (click)='doNice()'>Do Nice</button>
 <p [class.error]="isError">Hello world #2</p>
 <button (click)="doError()">Do Error</button>
+
+<p [style.color]="getColor()">Green text</p>
+<p [style.background-color]="haveColor ? 'yellow' : 'blue'">Yellow / blue </p>

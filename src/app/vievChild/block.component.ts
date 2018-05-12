@@ -9,7 +9,7 @@ export class BlockComponent{
     private visible: boolean = false;
 
     show(){
-        // this.visible = !this.visible;
-        this.visible = true;
+        this.visible = !this.visible;
+        // this.visible = true;
     }
 }

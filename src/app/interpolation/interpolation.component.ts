@@ -30,10 +30,11 @@ export class Inter{
 
     isNice:boolean = false;
     isError: boolean= false;
-    doNice(){
-        this.isNice= !this.isNice;
-    }
-    doError(){
-        this.isError = !this.isError;
+    doNice(){this.isNice= !this.isNice;}
+    doError(){this.isError = !this.isError;}
+
+    haveColor: boolean = false;
+    getColor(){
+        return 'green';
     }
 }
