@@ -1,0 +1,11 @@
+<div style="padding: 30px;">
+  <label>X:</label>
+  <input type="text" [(ngModel)]="xValue">
+
+  <label>Y:</label>
+  <input type="text" [(ngModel)]="yValue">
+
+  <button (click)="calculate()">Calculate</button>
+  <button (click)="reset()">Reset</button>
+  <div>Result: {{result}}</div>
+</div>

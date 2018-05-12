@@ -1,6 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";  //модуль маршрутизації
+import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
@@ -18,6 +19,7 @@ import { BlockComponent } from "./vievChild/block.component";
 import { HomeWork } from "./homework/hw.component";
 import { TableTrComponent } from "./homework/table-tr.component";
 import { Inter } from "./interpolation/interpolation.component";
+import { TestModel } from "./ngModel/ngmodel";
 
 @NgModule({
   declarations: [
@@ -29,12 +31,14 @@ import { Inter } from "./interpolation/interpolation.component";
     MessageBoxComponent,MessageBoxHost,
     BlockHostComponent,BlockComponent,
     HomeWork,TableTrComponent,
-    Inter
+    Inter,
+    TestModel
   ],
   imports: [
     BrowserModule,
     ListModule,
-    RouterModule.forRoot(routs)
+    RouterModule.forRoot(routs),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
