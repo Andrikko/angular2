@@ -9,3 +9,22 @@
   <button (click)="reset()">Reset</button>
   <div>Result: {{result}}</div>
 </div>
+
+<input type="checkbox" [(ngModel)]="settings.error">Error<br>
+<input type="checkbox" [(ngModel)]="settings.highlight">highlight<br>
+
+<!-- <p [ngClass]="settings">Ng Model </p> -->
+<div [ngClass]="settings">Div</div>
+
+<p [class.error]="settings.error">Hello</p>
+
+<div [ngSwitch]="choise">
+  <p *ngSwitchCase="'1'">Case 1</p>
+  <p *ngSwitchCase="'2'">Case 2</p>
+  <p *ngSwitchCase="'3'">Case 3</p>
+  <p *ngSwitchDefault>Default</p>
+</div>
+
+Choise: <input type="text" [(ngModel)]="choise">
+
+

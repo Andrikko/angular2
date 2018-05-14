@@ -1,7 +1,8 @@
 <h2>HomeWork</h2>
-<tr *ngFor="let item of Products" [hidden]="!item.visible">
+<tr *ngFor="let item of Products; let i = index" [hidden]="!item.visible">
     <td>Id:{{ item?.id }} </td>
     <td>Name: {{ item?.name }}</td>
     <td>Price:{{ item?.price }} </td>
-    <button (click)="delete(item.id)">Delete</button>
+    <!-- <button (click)="delete(item.id)">Delete</button> -->
+    <button (click)="delete(i)" >Delete</button>
 </tr>

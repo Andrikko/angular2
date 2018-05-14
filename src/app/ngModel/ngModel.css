@@ -1,0 +1,10 @@
+.error{
+    width: 30%;
+    border: 1px solid black;
+    background-color: burlywood;
+}
+.highlight{
+    text-decoration-line: overline;
+    color: orange;
+    font-style: italic;
+}

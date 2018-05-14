@@ -83,6 +83,8 @@ export class TableTrComponent extends HomeWork {
     }
   }
   delete(value: any){
-    this.Products[value-1].visible = false;
+    // this.Products[value-1].visible = false;
+    // alert(value);
+    this.Products[value].visible = false;
   }
 }
