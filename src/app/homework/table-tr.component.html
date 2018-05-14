@@ -1,8 +1,14 @@
 <h2>HomeWork</h2>
 <tr *ngFor="let item of Products; let i = index" [hidden]="!item.visible">
-    <td>Id:{{ item?.id }} </td>
-    <td>Name: {{ item?.name }}</td>
-    <td>Price:{{ item?.price }} </td>
-    <!-- <button (click)="delete(item.id)">Delete</button> -->
-    <button (click)="delete(i)" >Delete</button>
+  <td>Id:{{ item?.id }} </td>
+  <td>Name: {{ item?.name }}</td>
+  <td [style.color]="getPrice(i)">Price:{{ item?.price }} </td>
+  <td >Category: {{item?.category }}</td>
+  <button (click)="delete(i)">Delete</button>
 </tr>
+<select id="select_category" (change)="getChoise(choise)" [(ngModel)]="choise">
+    <!-- <option disabled value="Default">Default</option> -->
+  <option value="Category 1">Category 1</option>
+  <option value="Category 2">Category 2</option>
+  <option value="Category 3">Category 3</option>
+</select>
