@@ -20,6 +20,8 @@ import { HomeWork } from "./homework/hw.component";
 import { TableTrComponent } from "./homework/table-tr.component";
 import { Inter } from "./interpolation/interpolation.component";
 import { TestModel } from "./ngModel/ngmodel";
+import { DataService } from "./sample_service/data.service";
+import { DataListComponent } from "./sample_service/data-list.component";
 
 @NgModule({
   declarations: [
@@ -32,7 +34,7 @@ import { TestModel } from "./ngModel/ngmodel";
     BlockHostComponent,BlockComponent,
     HomeWork,TableTrComponent,
     Inter,
-    TestModel
+    TestModel,DataListComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +42,7 @@ import { TestModel } from "./ngModel/ngmodel";
     RouterModule.forRoot(routs),
     FormsModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

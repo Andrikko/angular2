@@ -1,6 +1,7 @@
 import { Component,OnInit} from "@angular/core";
 import { HomeWork} from "./hw.component";
 
+
 @Component({
   moduleId: module.id,
   selector: 'table-tr',
@@ -92,11 +93,13 @@ export class TableTrComponent extends HomeWork {
   delete(value: any) {
     this.Products[value].visible = false;
   }
+  
   getPrice(value: number) {
     if (this.Products[value].price > 500) {
-      return "red";
+      return this.homeworkService.getReturn();
     }
   }
+
   getChoise(value:string){
     // console.log(value);
     for(let i=0; i< this.Products.length; i++){
